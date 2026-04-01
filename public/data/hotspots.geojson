@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.5, -0.6] },
+      "properties": {
+        "name": "Hanifaru Bay, Maldives",
+        "species": "Mobula birostris",
+        "season": "May–November",
+        "description": "One of the world's most spectacular manta ray feeding aggregations.",
+        "citation": "Anderson et al. (2011)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [114.17, -21.93] },
+      "properties": {
+        "name": "Ningaloo Reef, Australia",
+        "species": "Mobula alfredi",
+        "season": "April–June",
+        "description": "Resident reef manta ray population with year-round sightings.",
+        "citation": "Deakos et al. (2011)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-87.53, 18.45] },
+      "properties": {
+        "name": "Isla Holbox, Mexico",
+        "species": "Mobula birostris",
+        "season": "May–September",
+        "description": "Seasonal aggregation of oceanic manta rays feeding on plankton blooms.",
+        "citation": "Croll et al. (2016)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.5, -5.0] },
+      "properties": {
+        "name": "Pemba Island, Tanzania",
+        "species": "Mobula alfredi",
+        "season": "October–March",
+        "description": "Cleaning stations and feeding aggregations in the Zanzibar Archipelago.",
+        "citation": "Rohner et al. (2013)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [144.0, 13.45] },
+      "properties": {
+        "name": "Guam, Micronesia",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Resident reef manta rays with known cleaning station sites.",
+        "citation": "Manta Trust (2020)"
+      }
+    }
+  ]
+}

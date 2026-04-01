@@ -1,0 +1,137 @@
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 60px;
+  /* Let the map show through */
+  background: linear-gradient(to top, rgba(4, 12, 22, 0.7) 0%, rgba(4, 12, 22, 0.1) 60%, transparent 100%);
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.scrim.exit {
+  opacity: 0;
+}
+
+.card {
+  pointer-events: all;
+  background: rgba(8, 18, 30, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 212, 255, 0.18);
+  border-radius: 12px;
+  padding: 28px 32px 24px;
+  max-width: 460px;
+  width: calc(100% - 48px);
+  color: #e0f0ff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cover slide */
+.coverTitle {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.coverSub {
+  margin: 0;
+  font-size: 14px;
+  color: #7ab8cc;
+  line-height: 1.6;
+}
+
+/* Stat block */
+.statBlock {
+  border-left: 2px solid rgba(0, 212, 255, 0.4);
+  padding-left: 14px;
+  margin-bottom: 4px;
+}
+
+.statNumber {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #00d4ff;
+  line-height: 1.1;
+}
+
+.statLoading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4a7a8a;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #7ab8cc;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+.chapterTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.body {
+  margin: 0;
+  font-size: 13px;
+  color: #8aaabb;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1e3a4a;
+  transition: background 0.3s;
+}
+
+.dotActive {
+  background: #00d4ff;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  color: #00d4ff;
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: rgba(0, 212, 255, 0.12);
+  color: #ffffff;
+}

@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-2.43, 50.72] },
+      "properties": {
+        "name": "Manta Trust",
+        "type": "NGO",
+        "location": "Dorset, UK",
+        "focus": "Global manta ray research and conservation",
+        "url": "https://www.mantatrust.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.55, -23.86] },
+      "properties": {
+        "name": "Marine Megafauna Foundation",
+        "type": "NGO",
+        "location": "Tofo, Mozambique",
+        "focus": "Manta and whale shark research, citizen science",
+        "url": "https://www.marinemegafauna.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [153.01, -27.49] },
+      "properties": {
+        "name": "Project Manta — University of Queensland",
+        "type": "Research",
+        "location": "Brisbane, Australia",
+        "focus": "Reef manta ray ecology and population dynamics",
+        "url": "https://www.projectmanta.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [146.82, -19.26] },
+      "properties": {
+        "name": "Australian Institute of Marine Science",
+        "type": "Research",
+        "location": "Townsville, Australia",
+        "focus": "Coral reef and marine species monitoring",
+        "url": "https://www.aims.gov.au"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.25, 32.87] },
+      "properties": {
+        "name": "Scripps Institution of Oceanography",
+        "type": "Research",
+        "location": "La Jolla, CA, USA",
+        "focus": "Marine biology, elasmobranch ecology",
+        "url": "https://scripps.ucsd.edu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.67, 41.52] },
+      "properties": {
+        "name": "Woods Hole Oceanographic Institution",
+        "type": "Research",
+        "location": "Woods Hole, MA, USA",
+        "focus": "Ocean science and marine conservation",
+        "url": "https://www.whoi.edu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-157.79, 21.43] },
+      "properties": {
+        "name": "Hawaii Institute of Marine Biology",
+        "type": "Research",
+        "location": "Kāneʻohe, HI, USA",
+        "focus": "Tropical marine research including elasmobranch biology",
+        "url": "https://www.himb.hawaii.edu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.82, -6.21] },
+      "properties": {
+        "name": "Coral Triangle Initiative Secretariat",
+        "type": "Intergovernmental",
+        "location": "Jakarta, Indonesia",
+        "focus": "Regional marine biodiversity and fisheries governance",
+        "url": "https://www.coraltriangleinitiative.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.33, 5.41] },
+      "properties": {
+        "name": "WorldFish Center",
+        "type": "Research",
+        "location": "Penang, Malaysia",
+        "focus": "Aquatic food systems and marine biodiversity",
+        "url": "https://www.worldfishcenter.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.1, -0.6] },
+      "properties": {
+        "name": "Maldives Manta Ray Project",
+        "type": "Research",
+        "location": "Maldives",
+        "focus": "Long-term reef manta ray population study in the Maldives",
+        "url": "https://www.maldivesmantas.com"
+      }
+    }
+  ]
+}

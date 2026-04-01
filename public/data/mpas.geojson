@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-178.3, 23.0], [-161.0, 23.0], [-161.0, 30.5], [-178.3, 30.5], [-178.3, 23.0]
+        ]]
+      },
+      "properties": {
+        "name": "Papahānaumokuākea Marine National Monument",
+        "country": "USA",
+        "iucn_category": "II",
+        "area_km2": 1510000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [142.5, -24.5], [154.0, -24.5], [154.0, -10.5], [142.5, -10.5], [142.5, -24.5]
+        ]]
+      },
+      "properties": {
+        "name": "Great Barrier Reef Marine Park",
+        "country": "Australia",
+        "iucn_category": "VI",
+        "area_km2": 344400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [70.0, -8.0], [74.0, -8.0], [74.0, -3.5], [70.0, -3.5], [70.0, -8.0]
+        ]]
+      },
+      "properties": {
+        "name": "Chagos Marine Protected Area",
+        "country": "BIOT",
+        "iucn_category": "Ia",
+        "area_km2": 640000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [147.0, -25.0], [162.0, -25.0], [162.0, -10.0], [147.0, -10.0], [147.0, -25.0]
+        ]]
+      },
+      "properties": {
+        "name": "Coral Sea Commonwealth Marine Reserve",
+        "country": "Australia",
+        "iucn_category": "II",
+        "area_km2": 989842
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [72.9, -0.8], [73.2, -0.8], [73.2, -0.2], [72.9, -0.2], [72.9, -0.8]
+        ]]
+      },
+      "properties": {
+        "name": "Hanifaru Bay Marine Protected Area",
+        "country": "Maldives",
+        "iucn_category": "IV",
+        "area_km2": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-87.6, 18.2], [-87.4, 18.2], [-87.4, 18.7], [-87.6, 18.7], [-87.6, 18.2]
+        ]]
+      },
+      "properties": {
+        "name": "Isla Holbox Biosphere Reserve",
+        "country": "Mexico",
+        "iucn_category": "VI",
+        "area_km2": 1575
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [113.5, -23.0], [115.0, -23.0], [115.0, -21.0], [113.5, -21.0], [113.5, -23.0]
+        ]]
+      },
+      "properties": {
+        "name": "Ningaloo Marine Park",
+        "country": "Australia",
+        "iucn_category": "II",
+        "area_km2": 2642
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [39.0, -5.5], [40.2, -5.5], [40.2, -4.5], [39.0, -4.5], [39.0, -5.5]
+        ]]
+      },
+      "properties": {
+        "name": "Pemba Channel Conservation Area",
+        "country": "Tanzania",
+        "iucn_category": "VI",
+        "area_km2": 1000
+      }
+    }
+  ]
+}
