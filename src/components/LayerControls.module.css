@@ -83,3 +83,25 @@
   accent-color: #00d4ff;
   cursor: pointer;
 }
+
+.divider {
+  height: 1px;
+  background: rgba(0, 212, 255, 0.1);
+  margin: 4px 0;
+}
+
+.select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 4px;
+  color: #7ab8cc;
+  font-size: 11px;
+  padding: 4px 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.select:focus {
+  border-color: rgba(0, 212, 255, 0.5);
+}

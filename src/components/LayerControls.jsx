@@ -12,7 +12,23 @@ const SPECIES = [
   { value: 'Mobula alfredi', label: 'M. alfredi (reef)' },
 ];
 
-export default function LayerControls({ layers, onChange, filterSpecies, onFilterSpecies }) {
+const MONTHS = [
+  { value: null,  label: 'Any month' },
+  { value: 1,  label: 'January' },
+  { value: 2,  label: 'February' },
+  { value: 3,  label: 'March' },
+  { value: 4,  label: 'April' },
+  { value: 5,  label: 'May' },
+  { value: 6,  label: 'June' },
+  { value: 7,  label: 'July' },
+  { value: 8,  label: 'August' },
+  { value: 9,  label: 'September' },
+  { value: 10, label: 'October' },
+  { value: 11, label: 'November' },
+  { value: 12, label: 'December' },
+];
+
+export default function LayerControls({ layers, onChange, filterSpecies, onFilterSpecies, filterMonth, onFilterMonth }) {
   const toggle = (key) => onChange((prev) => ({ ...prev, [key]: !prev[key] }));
 
   return (
@@ -65,6 +81,16 @@ export default function LayerControls({ layers, onChange, filterSpecies, onFilte
               {label}
             </label>
           ))}
+          <div className={styles.divider} />
+          <select
+            className={styles.select}
+            value={filterMonth ?? ''}
+            onChange={(e) => onFilterMonth(e.target.value ? Number(e.target.value) : null)}
+          >
+            {MONTHS.map(({ value, label }) => (
+              <option key={label} value={value ?? ''}>{label}</option>
+            ))}
+          </select>
         </div>
       )}
     </div>

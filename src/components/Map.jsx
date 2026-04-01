@@ -6,8 +6,25 @@ import MpaPopup from './MpaPopup';
 import InstitutionPopup from './InstitutionPopup';
 import LayerControls from './LayerControls';
 import Intro from './Intro';
+import Search from './Search';
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
+
+const MONTH_NUMS = {
+  Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12
+};
+
+function isActiveInMonth(season, month) {
+  if (!month || !season || season === 'Year-round') return true;
+  const m = season.match(/([A-Z][a-z]+)[–-]([A-Z][a-z]+)/);
+  if (!m) return true;
+  const start = MONTH_NUMS[m[1].slice(0, 3)];
+  const end   = MONTH_NUMS[m[2].slice(0, 3)];
+  if (!start || !end) return true;
+  return start <= end
+    ? month >= start && month <= end
+    : month >= start || month <= end; // wraps year (e.g. Nov–May)
+}
 
 async function fetchSightings() {
   const res = await fetch(
@@ -33,13 +50,15 @@ export default function Map() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [mapReady, setMapReady] = useState(false);
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(() => !localStorage.getItem('mapta_intro_seen'));
   const [sightingsCount, setSightingsCount] = useState(null);
   const [popup, setPopup] = useState(null);
   const [mpaPopup, setMpaPopup] = useState(null);
   const [institutionPopup, setInstitutionPopup] = useState(null);
   const [layers, setLayers] = useState({ hotspots: true, mpas: true, heatmap: true, institutions: true });
   const [filterSpecies, setFilterSpecies] = useState(null); // null = all
+  const [filterMonth, setFilterMonth] = useState(null);    // null = all
+  const [allHotspots, setAllHotspots] = useState(null);
 
   useEffect(() => {
     if (map.current) return;
@@ -182,9 +201,13 @@ export default function Map() {
       });
 
       // ── Hotspot glow + points ──────────────────────────────────
+      const hotspotsRes = await fetch('/data/hotspots.geojson');
+      const hotspotsData = await hotspotsRes.json();
+      setAllHotspots(hotspotsData);
+
       map.current.addSource('hotspots', {
         type: 'geojson',
-        data: '/data/hotspots.geojson',
+        data: hotspotsData,
       });
 
       map.current.addLayer({
@@ -258,15 +281,33 @@ export default function Map() {
     });
   }, [filterSpecies]);
 
+  // Month filter — update source data client-side
+  useEffect(() => {
+    if (!map.current?.isStyleLoaded() || !allHotspots) return;
+    const source = map.current.getSource('hotspots');
+    if (!source) return;
+    const filtered = {
+      ...allHotspots,
+      features: allHotspots.features.filter((f) =>
+        isActiveInMonth(f.properties.season, filterMonth)
+      ),
+    };
+    source.setData(filtered);
+  }, [filterMonth, allHotspots]);
+
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
-      <div ref={mapContainer} style={{ width: '100%', height: '100%' }} />
+    <div style={{ position: 'relative', width: '100%', height: '100vh', paddingTop: 48 }}>
+      <div ref={mapContainer} style={{ width: '100%', height: 'calc(100vh - 48px)' }} />
+
+      {mapReady && <Search map={map.current} />}
 
       <LayerControls
         layers={layers}
         onChange={setLayers}
         filterSpecies={filterSpecies}
         onFilterSpecies={setFilterSpecies}
+        filterMonth={filterMonth}
+        onFilterMonth={setFilterMonth}
       />
 
       {popup && (
@@ -303,7 +344,10 @@ export default function Map() {
         <Intro
           map={map.current}
           sightingsCount={sightingsCount}
-          onDismiss={() => setShowIntro(false)}
+          onDismiss={() => {
+            localStorage.setItem('mapta_intro_seen', '1');
+            setShowIntro(false);
+          }}
         />
       )}
     </div>

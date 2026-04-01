@@ -1,0 +1,50 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 20px;
+  height: 48px;
+  background: rgba(6, 13, 22, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.links {
+  display: flex;
+  gap: 4px;
+}
+
+.link {
+  font-size: 13px;
+  color: #7ab8cc;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.link:hover {
+  color: #e0f0ff;
+  background: rgba(0, 212, 255, 0.08);
+}
+
+.active {
+  color: #e0f0ff;
+  background: rgba(0, 212, 255, 0.12);
+}

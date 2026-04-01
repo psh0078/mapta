@@ -3,56 +3,309 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [73.5, -0.6] },
+      "geometry": { "type": "Point", "coordinates": [73.17, -0.60] },
       "properties": {
         "name": "Hanifaru Bay, Maldives",
-        "species": "Mobula birostris",
+        "species": "Mobula alfredi",
         "season": "May–November",
-        "description": "One of the world's most spectacular manta ray feeding aggregations.",
-        "citation": "Anderson et al. (2011)"
+        "description": "One of the largest known manta ray feeding aggregations on Earth. Up to 200+ individuals in a single tidal cycle during peak plankton blooms.",
+        "citation": "Anderson et al. (2011) — Oryx"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [114.17, -21.93] },
+      "geometry": { "type": "Point", "coordinates": [72.85, 3.80] },
+      "properties": {
+        "name": "Ari Atoll, Maldives",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Year-round resident reef manta population with multiple known cleaning stations. Well-studied individual ID dataset.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [113.83, -21.95] },
       "properties": {
         "name": "Ningaloo Reef, Australia",
         "species": "Mobula alfredi",
         "season": "April–June",
-        "description": "Resident reef manta ray population with year-round sightings.",
-        "citation": "Deakos et al. (2011)"
+        "description": "Large resident reef manta population; aggregations coincide with coral spawning and seasonal productivity pulses.",
+        "citation": "Deakos et al. (2011) — Coral Reefs"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-87.53, 18.45] },
+      "geometry": { "type": "Point", "coordinates": [113.78, -23.10] },
+      "properties": {
+        "name": "Coral Bay, Australia",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Year-round manta presence south of Ningaloo; important juvenile habitat and cleaning station zone.",
+        "citation": "Venables et al. (2016) — Biological Conservation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-87.40, 18.52] },
       "properties": {
         "name": "Isla Holbox, Mexico",
         "species": "Mobula birostris",
         "season": "May–September",
-        "description": "Seasonal aggregation of oceanic manta rays feeding on plankton blooms.",
-        "citation": "Croll et al. (2016)"
+        "description": "Seasonal feeding aggregation of oceanic mantas in the Yucatán Channel, driven by upwelling-related plankton blooms.",
+        "citation": "Croll et al. (2016) — Marine Biology"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [39.5, -5.0] },
+      "geometry": { "type": "Point", "coordinates": [-110.95, 18.72] },
+      "properties": {
+        "name": "Revillagigedo Archipelago, Mexico",
+        "species": "Mobula birostris",
+        "season": "November–May",
+        "description": "Remote oceanic island group hosting large oceanic manta aggregations; cleaning behavior and courtship documented extensively.",
+        "citation": "Rubin et al. (2013) — PLOS ONE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.90, 10.83] },
+      "properties": {
+        "name": "Bat Islands, Costa Rica",
+        "species": "Mobula birostris",
+        "season": "May–December",
+        "description": "Aggregation site for oceanic mantas in the Papagayo upwelling zone; one of the most accessible mainland Pacific hotspots.",
+        "citation": "White et al. (2017) — PLOS ONE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-86.97, 5.52] },
+      "properties": {
+        "name": "Cocos Island, Costa Rica",
+        "species": "Mobula birostris",
+        "season": "Year-round",
+        "description": "Remote UNESCO World Heritage seamount with year-round oceanic manta presence alongside sharks and other megafauna.",
+        "citation": "Hearn et al. (2014) — PLOS ONE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.80, -5.05] },
       "properties": {
         "name": "Pemba Island, Tanzania",
         "species": "Mobula alfredi",
         "season": "October–March",
-        "description": "Cleaning stations and feeding aggregations in the Zanzibar Archipelago.",
-        "citation": "Rohner et al. (2013)"
+        "description": "Resident reef manta population in the Zanzibar Archipelago; cleaning stations and feeding aggregations documented.",
+        "citation": "Rohner et al. (2013) — African Journal of Marine Science"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [144.0, 13.45] },
+      "geometry": { "type": "Point", "coordinates": [35.55, -23.86] },
+      "properties": {
+        "name": "Tofo Beach, Mozambique",
+        "species": "Mobula birostris",
+        "season": "Year-round",
+        "description": "One of the most important oceanic manta ray sites globally; large population with year-round presence and extensive photo-ID catalogue.",
+        "citation": "Marshall et al. (2011) — PLOS ONE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [55.48, -4.68] },
+      "properties": {
+        "name": "Mahé, Seychelles",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Reef manta population on the Mahé Plateau; cleaning stations on inner granitic island reefs.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.10, 23.12] },
+      "properties": {
+        "name": "Hamata, Egypt (Red Sea)",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Resident reef mantas at cleaning stations on outer Red Sea reefs near the Egyptian–Sudanese border.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [37.22, 19.62] },
+      "properties": {
+        "name": "Port Sudan, Red Sea",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Reef mantas associated with Sha'ab Rumi and Sanganeb Atoll reef systems; aggregations at cleaning stations.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [43.14, 11.78] },
+      "properties": {
+        "name": "Gulf of Tadjoura, Djibouti",
+        "species": "Mobula birostris",
+        "season": "November–January",
+        "description": "Seasonal oceanic manta aggregation driven by winter upwelling and zooplankton blooms in the Gulf of Tadjoura.",
+        "citation": "Rowat & Brooks (2012) — Journal of Fish Biology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [119.52, -8.52] },
+      "properties": {
+        "name": "Komodo, Indonesia",
+        "species": "Mobula alfredi",
+        "season": "February–April",
+        "description": "Reef manta feeding aggregations driven by upwelling in Komodo National Park; peak activity during SE monsoon.",
+        "citation": "Couturier et al. (2012) — Journal of Fish Biology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [115.48, -8.72] },
+      "properties": {
+        "name": "Nusa Penida, Bali, Indonesia",
+        "species": "Mobula alfredi",
+        "season": "May–October",
+        "description": "Highly accessible reef manta cleaning station in the Bali Strait; site of long-term population monitoring by Project Manta.",
+        "citation": "Germanov et al. (2019) — Frontiers in Marine Science"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [130.50, -0.82] },
+      "properties": {
+        "name": "Raja Ampat, Indonesia",
+        "species": "Mobula alfredi",
+        "season": "October–April",
+        "description": "Coral Triangle hotspot for reef manta rays; multiple cleaning stations in the Bird's Head Seascape.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [97.85, 9.05] },
+      "properties": {
+        "name": "Koh Bon, Thailand",
+        "species": "Mobula birostris",
+        "season": "November–April",
+        "description": "Seasonal oceanic manta aggregation in the Andaman Sea during the northeast monsoon; feeding on surface zooplankton.",
+        "citation": "Seah et al. (2019) — Ocean & Coastal Management"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [97.62, 8.65] },
+      "properties": {
+        "name": "Similan Islands, Thailand",
+        "species": "Mobula birostris",
+        "season": "November–April",
+        "description": "Oceanic manta aggregation at cleaning stations on exposed seamounts during the NE monsoon season.",
+        "citation": "Seah et al. (2019) — Ocean & Coastal Management"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [134.47, 7.50] },
+      "properties": {
+        "name": "Palau",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Year-round resident reef manta population at German Channel and other well-known cleaning stations.",
+        "citation": "Deakos (2012) — Environmental Biology of Fishes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [138.13, 9.52] },
+      "properties": {
+        "name": "Yap, Micronesia",
+        "species": "Mobula alfredi",
+        "season": "December–April",
+        "description": "Long-studied reef manta population at Mi'l Channel; one of the earliest sites for individual photo-ID research.",
+        "citation": "Deakos (2012) — Environmental Biology of Fishes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [144.75, 13.45] },
       "properties": {
         "name": "Guam, Micronesia",
         "species": "Mobula alfredi",
         "season": "Year-round",
-        "description": "Resident reef manta rays with known cleaning station sites.",
+        "description": "Resident reef manta rays at cleaning stations on the western reef slope; long-term monitoring by UOG Marine Lab.",
+        "citation": "Manta Trust (2020)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-156.03, 19.72] },
+      "properties": {
+        "name": "Keahole Point, Hawaii",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Iconic cleaning station aggregation off the Kona coast; night dives attract mantas to plankton drawn by resort lights.",
+        "citation": "Motta et al. (2016) — Marine Biology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-157.82, 21.30] },
+      "properties": {
+        "name": "Oahu, Hawaii",
+        "species": "Mobula alfredi",
+        "season": "Year-round",
+        "description": "Resident reef manta population on the North Shore; cleaning stations at Sharks Cove and associated reefs.",
+        "citation": "Motta et al. (2016) — Marine Biology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-32.43, -3.82] },
+      "properties": {
+        "name": "Fernando de Noronha, Brazil",
+        "species": "Mobula birostris",
+        "season": "January–March",
+        "description": "Seasonal oceanic manta aggregation at this remote Atlantic archipelago; feeding on productive upwelling-driven plankton.",
+        "citation": "Luiz et al. (2009) — Journal of the Marine Biological Association"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-28.72, 38.65] },
+      "properties": {
+        "name": "Azores, Portugal",
+        "species": "Mobula birostris",
+        "season": "June–October",
+        "description": "Seasonal oceanic manta aggregation in the mid-Atlantic; feeding on deep scattering layer organisms during summer upwelling.",
+        "citation": "Braun et al. (2015) — PLOS ONE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.82, 27.92] },
+      "properties": {
+        "name": "Flower Garden Banks, Gulf of Mexico",
+        "species": "Mobula birostris",
+        "season": "July–September",
+        "description": "Oceanic manta aggregation at offshore coral banks in the NW Gulf of Mexico; feeding on fish spawning aggregations.",
+        "citation": "Zimmerman & Ritchie (2006) — Gulf of Mexico Science"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [72.40, -6.30] },
+      "properties": {
+        "name": "Chagos Archipelago, BIOT",
+        "species": "Mobula birostris",
+        "season": "Year-round",
+        "description": "Oceanic manta rays in one of the most pristine and remote marine environments on Earth; minimal human disturbance.",
         "citation": "Manta Trust (2020)"
       }
     }
